@@ -30,11 +30,12 @@ while True:
         print("You got it right")
         
         break
+    elif user_guess > Random_N:
+        print("You were above the correct number")
     else:
-        print("That is incorrect")
-    
+        print("You were below the correct number")
 
 plural = "time" if Guesses == 1 else "times"
 
-print("It took",str(Guesses), plural, "to get it right")  
+print("It took",Guesses, plural, "to get it right")  
 
